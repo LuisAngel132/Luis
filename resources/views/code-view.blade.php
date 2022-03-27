@@ -23,7 +23,7 @@
     <style>
         body
         {
-            background-color:#1a202c;
+            background-color:#E05E2B;
 
         }
     </style>
@@ -33,7 +33,7 @@
 
 
         <div id="login">
-        <h3 class="text-center text-white pt-5">Inserta tu codigo</h3>
+        <h3 class="text-center text-white pt-5">SE HA ENVIADO UN CODIGO A TU CORREO </h3>
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
@@ -41,16 +41,19 @@
                         <form id="login-form" class="form" action="login-with-code" method="POST">
                         @csrf
                         <input type="hidden" name="email" value="{{$email}}">
-                            <h3 class="text-center text-info">Codigo de autenticación</h3>
+                            
+
                             <div class="form-group">
-                                <label for="username" class="text-info">Inserta tu codigo de autenticación:</label><br>
+                                <br>
+                                <label for="username" class=" text-white">ingresa el codigo que se envio a tu correo:</label><br>
+
                                 <input type="number" id="typeEmailX" class="form-control form-control-lg" name="code" required/>
                             </div>
                             <span style="color:red;">@error('code')
                         {{$message}}
                         @enderror
                     </span><br>
-                    <button type="submit" class="btn btn-info btn-md">Confirmar</button>
+                    <button type="submit" class="btn  text-white btn-md">Confirmar</button>
 
                         </form>
                     </div>

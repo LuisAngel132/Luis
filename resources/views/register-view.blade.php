@@ -24,15 +24,15 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #1a202c;
+  background-color: #E05E2B;
   height: 100vh;
 }
 #login .container #login-row #login-column #login-box {
   margin-top: 120px;
   max-width: 600px;
   height: 300px;
-  border: 1px solid #9C9C9C;
-  background-color: #EAEAEA;
+  
+  background-color: #E05E2B;
 }
 #login .container #login-row #login-column #login-box #login-form {
   padding: 20px;
@@ -60,9 +60,9 @@ body {
                     <div id="login-box" class="col-md-12">
                         <form id="login-form" class="form" action="register" method="POST">
                         @csrf
-                            <h3 class="text-center text-info ">CREAR CUENTA</h3>
+                            <h3 class="text-center text-white ">REGISTRO</h3>
                             <div class="form-group">
-                                <input type="email" id="typeEmailX" class="form-control form-control-lg" name="email" required>
+                                <input type="email" id="typeEmailX" class="form-control form-control-lg" placeholder="CORREO" name="email" required>
                             </div>
                             <span style="color:red;">@error('email')
                             {{$message}}
@@ -70,7 +70,7 @@ body {
                         </span>
                         <br>
                             <div class="form-group">
-                                <input class="form-control" type="password" id="typePasswordX" name="password" required>
+                                <input class="form-control" type="password" id="typePasswordX" placeholder="CONTRASENA" name="password" required>
                             </div>
                             <span style="color:red;">@error('password')
                             {{$message}}
@@ -78,7 +78,7 @@ body {
                         </span>
                         <br>
                             <div class="form-group">
-                                <input type="password" id="typePasswordX" class="form-control" name="password_confirmation" required/>
+                                <input type="password" id="typePasswordX" class="form-control" placeholder="REPETIR CONTRASENA" name="password_confirmation" required/>
                             </div>
                             <span style="color:red;">@error('password')
                             {{$message}}
@@ -86,10 +86,10 @@ body {
                         </span>
                         <br>
                             <div class="form-group">
-                                <button type="submit" name="submit" class="btn btn-info btn-md">Registrarse</button>
+                                <button type="submit" name="submit" class="btn text-white btn-md">Registrarse</button>
                             </div>
                             <div id="register-link" class="text-right">
-                                <a href="login" class="text-info">Login</a>
+                                <a href="login" class="text-white">Login</a>
                             </div>
                         </form>
                     </div>

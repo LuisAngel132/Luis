@@ -29,15 +29,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #1a202c;
+  background-color: #E05E2B;
   height: 100vh;
 }
 #login .container #login-row #login-column #login-box {
   margin-top: 120px;
   max-width: 600px;
   height: 320px;
-  border: 1px solid #9C9C9C;
-  background-color: #EAEAEA;
+  background-color: #E05E2B;
 }
 #login .container #login-row #login-column #login-box #login-form {
   padding: 20px;
@@ -56,7 +55,7 @@ body {
                     <div id="login-box" class="col-md-12">
                         <form id="login-form" class="form" action="login" method="POST">
                         @csrf
-                            <h3 class="text-center text-info">Login</h3>
+                            <h3 class="text-center text-white ">BIENVENIDO</h3>
                             <div class="form-group">
                                 <input type="email" id="typeEmailX" class="form-control form-control-lg" placeholder="CORREO" name="email" required>
                             </div>
@@ -72,13 +71,14 @@ body {
                         @enderror
                     </span>
                             <div class="form-group">
-                                <button type="submit" name="submit" class="btn btn-info btn-md">Entrar</button>
+                                <button type="submit" name="submit" class="btn text-white btn-md">INICIAR SESION</button>
                             </div>
 
                             <div id="register-link" class="text-right">
+
                                 <br>
-                                <br>
-                                <a href="register" class="text-info">Crear Cuenta</a>
+                                
+                                <a href="register" class="text-white">Crear Cuenta</a>
                             </div>
                         </form>
                     </div>
